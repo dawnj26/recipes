@@ -14,9 +14,7 @@ class Recipes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, childAspectRatio: 3 / 2),
+      child: ListView.builder(
         itemBuilder: (_, index) {
           return InkWell(
             onTap: () {
@@ -32,7 +30,7 @@ class Recipes extends StatelessWidget {
                 child: Column(
                   children: [
                     AspectRatio(
-                      aspectRatio: 2.3,
+                      aspectRatio: 2,
                       child: Image.network(
                         recipe[index].imageURL,
                         fit: BoxFit.cover,
@@ -40,7 +38,12 @@ class Recipes extends StatelessWidget {
                     ),
                     Container(
                       margin: const EdgeInsets.all(8),
-                      child: Text(recipe[index].title),
+                      child: Text(
+                        recipe[index].title,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ),
                   ],
                 ),
