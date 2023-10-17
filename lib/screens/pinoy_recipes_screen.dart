@@ -11,7 +11,9 @@ class PinoyRecipes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffF4D58D),
       appBar: AppBar(
+        backgroundColor: const Color(0xff8D0801),
         title: Text("${category.title} Recipes"),
         centerTitle: true,
       ),
