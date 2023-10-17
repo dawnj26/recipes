@@ -27,7 +27,7 @@ class _CategoryCardState extends State<CategoryCard> {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [widget.category.color, Colors.amber],
+              colors: [widget.category.color, const Color(0xffBF0603)],
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
             ),
