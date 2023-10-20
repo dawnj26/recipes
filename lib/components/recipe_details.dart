@@ -46,10 +46,10 @@ class RecipeDetails extends StatelessWidget {
               child: const TabBar(
                 tabs: [
                   Tab(
-                    text: "1",
+                    text: "Ingredients",
                   ),
                   Tab(
-                    text: "2",
+                    text: "Steps",
                   )
                 ],
               ),
