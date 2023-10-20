@@ -1,6 +1,6 @@
-# practice_pinoy_recipes
+# quinto_assignment 5
 
-Pinoy Recipes
+Culinary Around the World
 
 ## Getting Started
 
