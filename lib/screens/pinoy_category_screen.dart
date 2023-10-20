@@ -12,7 +12,7 @@ class PinoyRecipesScreen extends StatelessWidget {
       backgroundColor: const Color(0xffF4D58D),
       appBar: AppBar(
         backgroundColor: const Color(0xff8D0801),
-        title: const Text('Culinary'),
+        title: const Text('Culinary Around the World'),
         centerTitle: true,
       ),
       body: Categories(categories: categories),
