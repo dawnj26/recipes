@@ -8,14 +8,17 @@ class RecipeStepsScreen extends StatelessWidget {
   final Recipe recipe;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xffF4D58D),
-      appBar: AppBar(
-        backgroundColor: const Color(0xff8D0801),
-        title: Text(recipe.title),
-        centerTitle: true,
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        backgroundColor: const Color(0xffF4D58D),
+        appBar: AppBar(
+          backgroundColor: const Color(0xff8D0801),
+          title: Text(recipe.title),
+          centerTitle: true,
+        ),
+        body: RecipeDetails(recipe: recipe),
       ),
-      body: RecipeDetails(recipe: recipe),
     );
   }
 }
